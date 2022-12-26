@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+nav{
+    position: fixed;
+    background: #2b5876; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2b5876, #4e4376); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2b5876, #4e4376); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    
+}
+.enlace{
+    position: absolute;
+    padding: 10px 40px;
+}
+.logo{
+    height: 58px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+nav .tab-menu{
+    float: right;
+    margin-right: 20px;
+}
+nav .tab-menu li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav .tab-menu li a{
+    color: #fff;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav .tab-menu li span {
+	margin-right:10px;
+}
+li a.active, li a:hover{
+    background: #000090;
+    transition: .5s;
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.discheckbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#discheck{
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav .tab-menu li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+   
+    .tab-menu{
+        position: fixed;
+        width: 90%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav .tab-menu li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav .tab-menu li span a{
+        font-size: 20px;
+    }
+    nav .tab-menu li a{
+        font-size: 20px;
+    }
+   .tab-menu li span a:hover, .tab-menu li span li a.active{
+        background: #000090;
+    }
+       #check:checked ~ .tab-menu{
+        left:0;
+    }
+       #check:checked ~ .discheckbtn{
+        animation: .5s anim-lineUp normal;
+        left:100;      
+        display: block; 
+    }
+       #check:checked ~ .checkbtn{
+        animation: .5s anim-lineUp normal;
+        left:100;
+        display: none;
+        -webkit-animation: .5s anim-lineUp normal;
+    }
+        
+}
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }

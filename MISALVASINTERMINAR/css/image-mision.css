@@ -1,0 +1,159 @@
+.cont-mision{
+    width: 100%;
+    height: auto;
+    background-color:#D7D2CB;
+    
+    /* add flexbox style*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    
+
+}
+.mision-image{
+    width: 40%;
+    height: 350px;
+    background-color:#D7D2CB ;
+    margin: 5%;
+    box-sizing: border-box;
+}
+
+
+.img-mision{
+    cursor: pointer;
+    object-fit: cover;
+    float: right;
+    width: 100%;
+    position:relative;
+    margin-top: 0%;
+    margin-left: 0%;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    transition: all 400ms ease;
+}
+
+.img-mision:hover{
+    box-shadow: 10px 30px 40px 10px var(--grayishBlue);
+    transform: translateY(-4%);
+    -webkit-transform: translateY(-4%);
+    -moz-transform: translateY(-4%);
+    -ms-transform: translateY(-4%);
+    -o-transform: translateY(-4%);
+    color: black;
+}
+
+.text-mision{
+    width: 40%;
+    height: 350px;
+    background-color:  #D7D2CB;
+    margin: 5%;
+    box-sizing: border-box;
+}
+
+.text-mision h2{
+    margin-top: 7.5%;
+    font-family: 'Didact Gothic', sans-serif;
+    animation: 2s anim-lineUp normal;
+    text-shadow: .2px .2px 5px rgb(192, 190, 190);
+    font-size: 1.7em;
+    
+}
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  /*Add responsive media queries*/
+
+  @media screen and (max-width:1200px){
+    .mision-image{
+        width: 80%;
+        align-items: center;
+  }
+    .text-mision{
+        width: 80%;
+        align-items: center;
+    }
+}
+@media screen and (max-width:600px){
+    .mision-image{
+        width: 90%;
+        align-items: center;
+  }
+  .text-mision{
+    width: 80%;
+    align-items: center;
+  }
+  .text-mision h1{
+    font-family: 'Didact Gothic', sans-serif;
+    animation: 2s anim-lineUp normal;
+    text-shadow: .2px .2px 5px rgb(192, 190, 190);
+    text-align: center;
+    font-size: 2.0em;
+    
+}
+
+.text-mision h2{
+    font-family: 'Didact Gothic', sans-serif;
+    animation: 2s anim-lineUp normal;
+    text-shadow: .2px .2px 5px rgb(192, 190, 190);
+    font-size: 1.4em;
+    
+}
+}
+
+
+/*ANIMACION DE MISION TEXT*/
+.span{
+	margin: 0 20px;
+	line-height: .7;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+	animation: span 3s ease-in infinite alternate;
+    font-size: 2.8em;
+}
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+  
+  	
+	@media(max-width: 600px){ transform: scale(.65); }
+}
+.letter{
+	display: inline-flex;
+	height: 30px;
+	width: 27px;
+	/* border: 2.5px solid #FF1EAD; */
+	border: 2.35px solid black;
+	border-radius: 14px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .75),
+	inset 0 0 2px rgba(0, 0, 0, .45);
+	animation: letter 3s ease-in-out infinite alternate;
+}
+@keyframes span {
+	0%,30%{ margin: 0 15px; }
+	70%,100%{ margin: 0 5px; }
+}
+@keyframes letter {
+	0%,30%{ width: 27px; }
+	70%,100%{ width: 30vw; }
+}

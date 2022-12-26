@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+  }
+  body{
+      background-color: bisque;
+  }
+  .portada{
+    position: relative;
+    width: 100%;
+  }
+  .eslogan {
+      position: absolute;
+      font-family: 'Didact Gothic', sans-serif;
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      left: 35%;
+      top: 60%;
+      text-align:  center;
+      text-shadow: 1px 1px 20px rgb(160, 160, 160);
+      display: flex; 
+      animation: 2s anim-lineUp normal;
+  }
+    @keyframes anim-lineUp {
+      0% {
+        opacity: 0;
+        transform: translateY(80%);
+      }
+      20% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  #txt{
+      position:absolute;
+      width: 100%;
+      top: 100%;
+  }
+  #t1{
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Didact Gothic', sans-serif;
+    -webkit-text-fill-color: rgb(170, 255, 0);
+    -webkit-text-stroke: .30px black;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer; 
+  }
+  #t1:before {
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: rgb(170, 255, 0);
+    transition: all .3s;
+  }
+  #t1:hover:before {
+    width: 100%;
+  }
+  
+  
+  @media (max-width: 858px){
+  
+      .eslogan {
+        position: absolute;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        left: 35%;
+        top: 25%;
+        text-align:  center;
+        text-shadow: 1px 1px 20px grey;
+        display: flex; 
+        animation: 2s anim-lineUp normal;
+    }
+    #txt{
+      position:absolute;
+      width: 100%;
+      top: 80%;
+    }
+    
+    #t1{
+      display: inline-block;
+      font-size: 1em;
+      font-family: 'Didact Gothic', sans-serif;
+      -webkit-text-fill-color: rgb(170, 255, 0);
+      -webkit-text-stroke: .30px black;
+      position: relative;
+      margin-left: 1%;
+      margin-right: -3%;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer; 
+    }
+    #t1:before {
+      position: absolute;
+      left: -2px;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: rgb(170, 255, 0);
+      transition: all .3s;
+    }
+    #t1:hover:before {
+      width: 100%;
+    }
+  
+  }
+  
+  
+  @media (max-width: 500px){
+  
+    .eslogan {
+      position: absolute;
+      font-family: 'Didact Gothic', sans-serif;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      left: 35%;
+      top: 26%;
+      text-align:  center;
+      text-shadow: 1px 1px 20px grey;
+      display: flex; 
+      animation: 2s anim-lineUp normal;
+  }
+  #txt{
+    position:absolute;
+    width: 100%;
+    top: 50%;
+  }
+  #t1{
+    display: inline-block;
+    font-size: .6em;
+    font-family: 'Didact Gothic', sans-serif;
+    -webkit-text-fill-color: rgb(170, 255, 0);
+    -webkit-text-stroke: .30px black;
+    position: relative;
+    margin-left: 1%;
+    margin-right: -2%;
+    max-width: 100%;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer; 
+  }
+  #t1:before {
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: rgb(170, 255, 0);
+    transition: all .3s;
+  }
+  #t1:hover:before {
+    width: 100%;
+  }
+  }
+  
+  

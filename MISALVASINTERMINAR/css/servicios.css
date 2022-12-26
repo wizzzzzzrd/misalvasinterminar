@@ -1,0 +1,163 @@
+.ge{
+  background-color: whitesmoke;
+    height: 130%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contenedor{
+    margin: 0 auto;
+   
+    text-align: center;
+    width: 90%;
+    height: 24rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+  
+    margin: 0 auto;
+  }
+  
+  .c1{
+    width: 48%;
+    height: 100%;
+    background-color: brown;
+    padding: 1rem;
+    transition:all 0.3s ease;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgb(104, 105, 142);
+    
+    background-color: #7b97b4;
+   
+  }
+  
+    .c1:hover  {
+      transition:all .5s ease-in-out;
+      -webkit-transform:scale(1.1);transform:scale(1.1);}
+    .c1 {overflow:hidden;}
+    .c2:hover  {
+      transition:all .5s ease-in-out;
+      -webkit-transform:scale(1.1);transform:scale(1.1);}
+    .c2 {overflow:hidden;}
+  
+    .c3:hover  {
+      transition:all .5s ease-in-out;
+      -webkit-transform:scale(1.1);transform:scale(1.1);}
+    .c3 {overflow:hidden;}
+  
+  
+  .c2{
+    margin-left: 4%;
+    width: 48%;
+    height: 100%;
+    background-color: rgb(0, 72, 255);
+    padding: 1rem;
+    transition:all 0.3s ease;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgb(62, 94, 83);
+    background-color: #7b97b4;
+  }
+  .c3{
+    margin-top: 6rem;
+    margin-left: 28.4%;
+    width: 43%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 28rem;
+    padding: 1rem;
+    transition:all 0.3s ease;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgb(62, 94, 83);
+    background-color: #7b97b4;
+  }
+  
+  .t{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 40px;
+  }
+  #p{
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .lii{
+    font-family: 'Didact Gothic', sans-serif;
+    list-style: circle;
+    text-align: justify;
+    font-size: 16px;
+    padding: .3rem;
+    height: 100%;
+  }
+  #pm{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 25px;
+    margin:  .5rem;
+  }
+  #pp{
+    font-size: 28px;
+    font-family: 'Didact Gothic', sans-serif;
+    font: bolder;
+   
+    margin: .5rem;
+  }
+  .sub{
+    padding: .1rem;
+    font-family: 'Didact Gothic', sans-serif;
+    font: bold;
+    margin: 0%;
+  }
+  .ull{
+    margin: 0%;
+  }
+  .Es{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 30px;
+    text-shadow: rgb(73, 73, 73);
+  }
+  @media (max-width: 1298px) {
+    .contenedor{
+      
+      height: 40rem;
+      
+    }
+    
+  }
+  @media (min-width: 722px) {
+    .contenedor{
+      display: flex ;
+      
+    }
+    
+  }
+  @media (max-width: 790px){
+    .contenedor{
+      display: block;
+    }
+    .c1{
+      width: 89%;
+    }
+    .c2{
+      margin-left: 0%;
+      width: 89%;
+      margin-top: 1rem;
+      
+    }
+    .c3{
+      margin-left: 0%;
+      width: 80%;;
+      position: relative;
+      top: 47rem;
+      margin: 0 auto;
+    }
+    .ge{
+      height: 140rem;
+    }
+    .Es{
+      font-size: 25px;
+    }
+    #pp{
+      font-size: 21px;
+    }
+  }
